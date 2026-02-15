@@ -1,0 +1,201 @@
+{
+  "$schema": "./content.schema.json",
+  "site": {
+    "name": "Lennart Röstel",
+    "title": "Lennart Röstel | Robotics Researcher",
+    "tagline": "Robotics, AI, Simulation"
+  },
+  "about": {
+    "name": "Lennart Roestel",
+    "image": {
+      "src": "assets/profile.png",
+      "alt": "Lennart Röstel profile photo",
+      "width": 400,
+      "height": 400
+    },
+    "bio": [
+      "Hi! I'm a PhD candidate at TU Munich's [Learning AI for Dextrous Robots Lab](https://aidx-lab.org/). My research focuses on learning-based state estimation, reinforcement learning, and sim-to-real transfer for robotic manipulation with hands.",
+      "Recently, I interned at NVIDIA, where I worked on advanced contact models for the Newton simulator. Previously, I received my B.Sc. in Physics from CAU Kiel and my M.Sc. in Robotics, Cognition, Intelligence from TU Munich."
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/lenroe"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/lennart-r%C3%B6stel-795727281"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=BPUd5h0AAAAJ"
+      }
+    ]
+  },
+  "research": {
+    "title": "research",
+    "items": [
+      {
+        "title": "SDF-Hydroelastic Contacts for Newton Simulator",
+        "paperUrl": "https://github.com/newton-physics/newton/pull/1248",
+        "authors": "NVIDIA Internship Project",
+        "summary": "Accurately simulating physical contact is crucial for training and evaluating robotic manipulation. As an NVIDIA intern, I implemented a GPU-accelerated, high-fidelity contact model that is now part of the Newton simulator.",
+        "media": {
+          "type": "image",
+          "src": "assets/hydro.png",
+          "alt": "SDF-Hydroelastic Contacts for Newton Simulator",
+          "href": "https://github.com/newton-physics/newton"
+        },
+        "links": [
+          {
+            "label": "Newton",
+            "url": "https://github.com/newton-physics/newton"
+          },
+          {
+            "label": "SDF-Hydroelastic PR",
+            "url": "https://github.com/newton-physics/newton/pull/1248"
+          }
+        ]
+      },
+      {
+        "title": "Composing Dextrous Grasping and In-Hand Manipulation via Scoring with a Reinforcement Learning Critic",
+        "paperUrl": "https://arxiv.org/abs/2505.13253",
+        "authors": "Lennart Röstel*, Dominik Winkelbauer*, Johannes Pitz, Leon Sievers, Berthold Bäuml",
+        "venue": "ICRA 2025",
+        "summary": "We compose separately trained grasping and in-hand manipulation policies using an RL critic as a scoring function, enabling seamless transitions between skills without joint training.",
+        "media": {
+          "type": "image",
+          "src": "assets/icra25_prev.png",
+          "alt": "Composing Dextrous Grasping and In-Hand Manipulation",
+          "href": "https://www.youtube.com/watch?v=P8jSDg5TA_E"
+        },
+        "links": [
+          {
+            "label": "project",
+            "url": "https://aidx-lab.org/manipulation/icra25"
+          },
+          {
+            "label": "arxiv",
+            "url": "https://arxiv.org/abs/2505.13253"
+          },
+          {
+            "label": "video",
+            "url": "https://www.youtube.com/watch?v=P8jSDg5TA_E"
+          }
+        ]
+      },
+      {
+        "title": "Learning a Shape-Conditioned Agent for Purely Tactile In-Hand Manipulation of Various Objects",
+        "paperUrl": "https://arxiv.org/abs/2407.18834",
+        "authors": "Johannes Pitz*, Lennart Röstel*, Leon Sievers, Berthold Bäuml",
+        "venue": "IROS 2024",
+        "summary": "We train a single shape-conditioned policy that can manipulate diverse objects using only tactile feedback, generalizing to novel shapes at test time.",
+        "media": {
+          "type": "image",
+          "src": "assets/iros24_prev.png",
+          "alt": "Learning a Shape-Conditioned Agent for Tactile In-Hand Manipulation",
+          "href": "https://www.youtube.com/watch?v=aldTETxDbcU"
+        },
+        "links": [
+          {
+            "label": "project",
+            "url": "https://aidx-lab.org/manipulation/iros24"
+          },
+          {
+            "label": "arxiv",
+            "url": "https://arxiv.org/abs/2407.18834"
+          },
+          {
+            "label": "video",
+            "url": "https://www.youtube.com/watch?v=aldTETxDbcU"
+          }
+        ]
+      },
+      {
+        "title": "Estimator-Coupled Reinforcement Learning for Robust Purely Tactile In-Hand Manipulation",
+        "paperUrl": "https://arxiv.org/abs/2311.04060",
+        "authors": "Lennart Röstel, Johannes Pitz, Leon Sievers, Berthold Bäuml",
+        "venue": "IEEE-RAS Humanoids 2023",
+        "summary": "We introduce a coupled training approach for state estimators and RL policies. This allows the policy to learn to be robust to estimation errors and avoid failure modes stemming from partial observability. The method results in highly robust and performant manipulation that transfers zero-shot from simulation to the real robot.",
+        "media": {
+          "type": "video",
+          "poster": "assets/humanoids23_poster.jpg",
+          "src": "assets/humanoids23.mp4"
+        },
+        "links": [
+          {
+            "label": "project",
+            "url": "https://aidx-lab.org/manipulation/humanoids23"
+          },
+          {
+            "label": "arxiv",
+            "url": "https://arxiv.org/abs/2311.04060"
+          },
+          {
+            "label": "video",
+            "url": "https://www.youtube.com/watch?v=rIDo_DmlDF4"
+          }
+        ]
+      },
+      {
+        "title": "Dextrous Tactile In-Hand Manipulation Using a Modular Reinforcement Learning Architecture",
+        "paperUrl": "https://arxiv.org/abs/2303.04705",
+        "authors": "Johannes Pitz, Lennart Röstel, Leon Sievers, Berthold Bäuml",
+        "venue": "ICRA 2023",
+        "summary": "A modular RL architecture that composes a learning-based state estimator with a goal-conditioned policy. For the first time, this enables goal-conditioned purely tactile dextrous in-hand reorientation of a cube.",
+        "media": {
+          "type": "image",
+          "src": "assets/icra23_prev.png",
+          "alt": "Dextrous Tactile In-Hand Manipulation Using a Modular RL Architecture",
+          "href": "https://www.youtube.com/watch?v=0VvSIvtHTq0"
+        },
+        "links": [
+          {
+            "label": "project",
+            "url": "https://aidx-lab.org/manipulation/icra23"
+          },
+          {
+            "label": "arxiv",
+            "url": "https://arxiv.org/abs/2303.04705"
+          },
+          {
+            "label": "video",
+            "url": "https://www.youtube.com/watch?v=0VvSIvtHTq0"
+          }
+        ]
+      },
+      {
+        "title": "Learning a State Estimator for Tactile In-Hand Manipulation",
+        "paperUrl": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+        "authors": "Lennart Röstel, Leon Sievers, Johannes Pitz, Berthold Bäuml",
+        "venue": "IROS 2022",
+        "summary": "We learn a neural network state estimator from tactile sensors that accurately tracks object pose during in-hand manipulation, enabling closed-loop control.",
+        "media": {
+          "type": "image",
+          "src": "assets/iros22_prev.png",
+          "alt": "Learning a State Estimator for Tactile In-Hand Manipulation",
+          "href": "https://www.youtube.com/watch?v=SaBwlCRnR3k"
+        },
+        "links": [
+          {
+            "label": "pdf",
+            "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf"
+          },
+          {
+            "label": "video",
+            "url": "https://www.youtube.com/watch?v=SaBwlCRnR3k"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "contact",
+    "subtitle": "Get in touch",
+    "email": "lennart.roestel@tum.de"
+  },
+  "footer": {
+    "copyright": "© 2026 Lennart Roestel. All rights reserved.",
+    "signature": "~lenroe/"
+  }
+}

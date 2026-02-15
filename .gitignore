@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails/cache
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor
+.vscode/
