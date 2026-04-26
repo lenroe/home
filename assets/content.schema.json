@@ -63,7 +63,8 @@
       "properties": {
         "title": { "type": "string", "minLength": 1 },
         "subtitle": { "type": "string", "minLength": 1 },
-        "email": { "type": "string", "format": "email" }
+        "email": { "type": "string", "format": "email" },
+        "contactCard": { "$ref": "#/$defs/labeledLink" }
       }
     },
     "footer": {

@@ -194,6 +194,14 @@ function renderContact(contact) {
   const email = document.getElementById('contact-email');
   email.textContent = contact.email;
   email.href = `mailto:${contact.email}`;
+
+  if (contact.contactCard) {
+    const row = document.getElementById('contact-card-row');
+    const link = document.getElementById('contact-card-link');
+    link.textContent = contact.contactCard.label;
+    link.href = contact.contactCard.url;
+    row.classList.remove('hidden');
+  }
 }
 
 function renderFooter(footer) {

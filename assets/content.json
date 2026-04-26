@@ -14,7 +14,7 @@
       "height": 400
     },
     "bio": [
-      "Hi! I'm a PhD candidate at TU Munich's [Learning AI for Dextrous Robots Lab](https://aidx-lab.org/). My research focuses on learning-based state estimation, reinforcement learning, and sim-to-real transfer for robotic manipulation with hands.",
+      "Hi! I'm a PhD candidate at TU Munich's [Learning AI for Dextrous Robots Lab](https://aidx-lab.org/). My research focuses on learning-based state estimation, reinforcement learning, and sim-to-real transfer for robotic manipulation with hands. I'm currently interested in scaling reinforcement learning in simulation for robust and general manipulation.",
       "Recently, I interned at NVIDIA, where I worked on advanced contact models for the Newton simulator. Previously, I received my B.Sc. in Physics from CAU Kiel and my M.Sc. in Robotics, Cognition, Intelligence from TU Munich."
     ],
     "links": [
@@ -27,8 +27,12 @@
         "url": "https://www.linkedin.com/in/lennart-r%C3%B6stel-795727281"
       },
       {
-        "label": "Google Scholar",
+        "label": "Scholar",
         "url": "https://scholar.google.com/citations?user=BPUd5h0AAAAJ"
+      },
+      {
+        "label": "AIDX Lab",
+        "url": "https://aidx-lab.org/"
       }
     ]
   },
@@ -192,7 +196,11 @@
   "contact": {
     "title": "contact",
     "subtitle": "Get in touch",
-    "email": "lennart.roestel@tum.de"
+    "email": "lennart.roestel@tum.de",
+    "contactCard": {
+      "label": "TUM contact card",
+      "url": "https://campus.tum.de/tumonline/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=5B81330DF11C2CA0"
+    }
   },
   "footer": {
     "copyright": "© 2026 Lennart Roestel. All rights reserved.",
