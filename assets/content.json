@@ -40,6 +40,25 @@
     "title": "research",
     "items": [
       {
+        "title": "Denoising Particle Filters: Learning State Estimation with Single-Step Objectives",
+        "paperUrl": "https://arxiv.org/abs/2602.19651",
+        "authors": "Lennart Röstel, Berthold Bäuml",
+        "venue": "ICRA 2026",
+        "summary": "We introduce DnPF, a particle filter that learns measurement models via a denoising score-matching objective trained on single state transitions rather than unrolled sequences. At inference, the learned denoiser is combined with a dynamics model to recursively solve the Bayesian filtering equation in score space, matching strong baselines while retaining the composability of classical filtering, so priors and external sensor models can be added without retraining.",
+        "media": {
+          "type": "image",
+          "src": "assets/icra26_prev.png",
+          "alt": "Denoising Particle Filters: one timestep of inference in score space",
+          "href": "https://arxiv.org/abs/2602.19651"
+        },
+        "links": [
+          {
+            "label": "arxiv",
+            "url": "https://arxiv.org/abs/2602.19651"
+          }
+        ]
+      },
+      {
         "title": "SDF-Hydroelastic Contacts for Newton Simulator",
         "paperUrl": "https://github.com/newton-physics/newton/pull/1248",
         "authors": "NVIDIA Internship Project",
