@@ -256,3 +256,12 @@ async function init() {
 }
 
 init();
+
+// Respect reduced-motion: don't autoplay the showcase clip.
+(() => {
+  const video = document.getElementById('showcase-video');
+  if (video && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    video.removeAttribute('autoplay');
+    video.pause();
+  }
+})();
